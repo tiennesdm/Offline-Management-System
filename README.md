@@ -20,7 +20,7 @@ The application uses the following technologies:
 - **Frontend**: React, React Router, Redux (for state management)
 - **Backend**: Node.js, Express.js
 - **Database**: MongoDB
-- **Additional Tools**: Service Workers for offline support, Lottie Library for rendering animations
+- **Additional Tools**: Service Workers for offline support, Lottie Library for rendering animations, Redux Persist for store management, Webpack for configuration, jest and react testing lib 
 
 ### Prerequisites
 
@@ -45,6 +45,7 @@ Follow these steps to set up the project:
  2. **Installation**
        ```bash
         yarn install
+        yarn build
 3. **RUN THE PROJECT**
      ```bash
       yarn dev
