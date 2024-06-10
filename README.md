@@ -30,10 +30,14 @@ Before setting up the project, ensure you have the following installed:
 - npm or yarn(1.22.22)
 - MongoDB instance (local or cloud-based)
 - 
-### Backend URL
+
+### DATABASE URL ###
+**MONGO_DB_URL=mongodb+srv://tiennesdm:shubhammehta@lottie-api.g4jdpmc.mongodb.net**
+
+### Backend URL ###
 **http://localhost:3000/graphql**
 
-### Setup
+### Frontend Setup ###
 
 Follow these steps to set up the project:
 
@@ -42,14 +46,21 @@ Follow these steps to set up the project:
    ```bash
    git clone https://github.com/tiennesdm/Offline-Management-System.git
    cd Offline-Management-System
+   ```
  2. **Installation**
-       ```bash
-        yarn install
+     ```bash
+      yarn install
         yarn build
+    ```
 3. **RUN THE PROJECT**
      ```bash
       yarn dev
-4. **GRAPHQL QUERY AND MUTATION**
+      ```
+4. **VERIFY TEST CASES FOR COMPONENT**
+     ```bash
+      yarn test
+      ```
+5. **GRAPHQL QUERY AND MUTATION**
     ```
     1. export const UPLOAD_LOTTIE =`
     mutation uploadLottie($file: Upload!, $name: String!, $description: String!) {
@@ -93,6 +104,72 @@ Follow these steps to set up the project:
        }
       }
      `;
+     ```
+     
+### Backend Setup (Offline-Management-System-Backend) ###
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/tiennesdm/Offline-Management-System-Backend.git
+   cd Offline-Management-System-Backend
+   ```
+ 2. **Installation**
+       ```bash
+        yarn install
+        ```
+3. **RUN THE PROJECT**
+     ```bash
+      yarn dev
+      ```
+4. **GRAPHQL QUERY AND MUTATION**
+    ```
+    1. mutation uploadLottie($file: Upload!, $name: String!, $description: String!) {
+    uploadLottie(file: $file, name: $name, description: $description) {
+      id
+      filename
+      mimetype
+      encoding
+      url
+      name
+      description
+      isValidLottie
+     }
+     }
+    `;
+    2. query GetLotties {
+         lotties {
+           id
+           filename
+           mimetype
+           encoding
+           url
+           name
+          description
+          isValidLottie
+       }
+      }
+    `;
+    3. query SearchLotties($query: String!) {
+          searchLotties(query: $query) {
+           id
+           filename
+           mimetype
+           encoding
+          url
+          name
+          description
+         isValidLottie
+       }
+      }
+     `;
+     ```
+
+
+
+
+
+
 
 
 
