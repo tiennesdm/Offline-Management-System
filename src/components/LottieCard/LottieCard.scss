@@ -1,0 +1,35 @@
+.lottie-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 0.5rem; 
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Tailwind class: shadow-lg */
+    padding: 1rem; 
+    margin: 1rem; 
+    height: auto;
+    width: 300px;
+    .lottie-container {
+      width: auto;
+      height: 250px; 
+    }
+  
+    .download-button {
+      margin-top: 1rem; 
+      background-color: #3b82f6;
+      color: white; 
+      font-weight: 600; 
+      padding: 0.5rem 1rem; 
+      border-radius: 0.25rem; 
+      transition: background-color 0.3s; 
+      &:hover {
+        background-color: #2563eb; 
+      }
+  
+      &:focus {
+        outline: none; 
+        box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.5);
+      }
+    }
+  }
+  

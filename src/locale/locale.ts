@@ -1,0 +1,13 @@
+export const NETWORK_RESPONSE_ERROR = 'Network response was not ok';
+export const DOWNLOAD_FILE_ERROR = 'There was an error downloading the file:' ;
+export const DOWNLOAD_JSON='Download JSON';
+export const NO_LOTTIE_FILE='No Lottie files available';
+export const VALID_JSON_FILE_MESSAGE='Please upload a valid Lottie JSON file.';
+export const INVALID_JSON_FILE_LOTTIE_MESSAGE  = 'Invalid Lottie JSON format.';
+export const INVALID_JSON_FILE='Invalid JSON format.';
+export const INVALID_LOTTIE_FILE = 'Invalid Lottie JSON file.';
+export const UPLOAD = 'Upload';
+export const OFFLINE_MESSAGE='You are not connected with Internet';
+export const ONLINE_MESSAGE='You are connected with Internet';
+export const OFFLINE_MESSAGE_FEATURE='Some features may not be available while offline.';
+export const SEARCH_LOTTIE_MESSAGE='Search for lotties...';
